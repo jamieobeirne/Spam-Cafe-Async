@@ -128,9 +128,15 @@ PEC1. Desarrollo de una web
         </div>
 
         <div>
+            <!--art direction-->
+
             <div class="detalle_image_container">
                 <div class="detalle_image">
-                    <img src="./images/spam_tacos_600w.png" alt="image of a Spam taco">
+                    <picture>
+                        <img srcset="./images/spam_tacos_160w.png 160w, ./images/spam_tacos_320w.png 320w, ./images/spam_tacos_600w.png 600w "
+                            sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
+                            src="./images/spam_tacos_600w.png" alt="image of a Spam taco">
+                    </picture>
                 </div>
 
                 <article class="detalle_content">
@@ -192,6 +198,15 @@ PEC1. Desarrollo de una web
                         </p>
                     </footer>
                 </article>
+            </div>
+
+            <div class="detail_hero_image_container">
+                <picture>
+                    <source media="(max-width: 450px)" srcset="/images/couple_small.jpeg">
+                    <source media="(max-width: 1199px)" srcset="/images/couple_medium.jpeg">
+                    <source media="(min-width: 1200px)" srcset="/images/couple_large.jpeg">
+                    <img src="./images/couple_large.jpeg" alt="happy couple eating">
+                </picture>
             </div>
 
             <div class="detalle_media_center">

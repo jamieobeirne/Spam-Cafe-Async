@@ -16,7 +16,7 @@ h1,h2,h3,h6{
     font-family: 'Dela Gothic One', cursive;
 }
 
-p{
+h4, h5,p{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -157,7 +157,7 @@ body{
     color: var(--second_color);
 }
 
-.main_message,main_message_categoria {
+.main_message,.main_message_categoria {
     font-size: 27px;
     color: var(--second_color);
     margin-bottom:17px;
@@ -181,12 +181,100 @@ sup{
     display: inline;
 }
 
+/*clip-path on homepage*/
+
+
+.clip-path-horizontal-arrow{
+    -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    width: 85%;
+    float: right;
+
+}
+
+.clip-path-vertical-arrow{
+    display: none;
+}
+
+
+.arrow-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 47px 12px 5px 12px;
+    color: var(--second_color);
+    color: white
+}
+
+
+.homepage-question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homepage-question-inner{
+    margin: 0 0 0 30px;
+}
+
+
+.body-clip-path{
+    margin: 5px 0;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.container-clip-path{
+    width:55%;
+    margin: 12px 0;
+}
+
+.inner-clip-path{
+    background:#26ebf1;
+    padding: 35px;
+    border-radius: 10px;
+    color: white;
+    width:800px;
+    clip-path: circle(9% at 91% 35%);
+    transition: clip-path .5s ease-in-out;
+    cursor: pointer;
+}
+
+.inner-clip-path h3{
+    margin: 0;
+}
+
+
+.inner-clip-path:hover{
+    clip-path: circle(145% at 0% 0%);
+    background-color: var(--third_color);
+}
+
+span{
+    float:right;
+    font-weight:bold;
+    font-size: 65px;
+    margin-right: 4%;
+    margin-top: -5px;
+    transition: color .5;
+    position: relative;
+}
+
+.inner-clip-path:hover span{
+    color: rgba(0, 0, 0, 0.0);
+}
+
+
 .qoute{
     display: flex; /*horizontally and verically center things*/
     align-items: center;        
     justify-content: center;
     flex-direction: column;
-    margin-top: 95px;
+    margin-top: 0;
     margin-bottom: 85px;
     color: var(--second_color);
     font-family: 'Dela Gothic One', cursive;
@@ -367,10 +455,22 @@ ul.breadcrumb li a {
     color:var(--hover-color);
 }
 
+.detail_hero_image_container{
+    width:90%;
+    max-width: 90%;
+    margin: 10px auto 15px auto;
+}
+
+.detail_hero_image_container img{
+    max-width: 100%;
+    border-radius: 30px; 
+}
+
 .detalle_image_container{
     display: flex; 
     padding:70px; 
-    flex-direction: row;  
+    flex-direction: row; 
+    
 }
 
 .detalle_image{
@@ -630,6 +730,28 @@ ul.breadcrumb li a {
         font-size: 20px;
     }
 
+
+    /*clip path responsive rules*/
+    .clip-path-horizontal-arrow{
+        display:none;
+        
+    }
+
+    .clip-path-vertical-arrow{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(80% 0, 80% 50%, 100% 50%, 50% 100%, 0 50%, 20% 50%, 20% 0);
+        width:85%;
+        margin-bottom: 5px;
+    }
+
+    .arrow-container{
+        flex-direction: column;
+    }
+   
+
+
     .column{
         width: 100%;
         display: block;
@@ -738,7 +860,8 @@ ul.breadcrumb li a {
         padding-top: 55px;
         padding-left:35px;
     }
-   
+
+    
 }
 
 @media only screen and (max-width: 660px) {
@@ -789,8 +912,12 @@ ul.breadcrumb li a {
     }
 
     .main_text_container h1, .categoria_container h1, .detalle_container h1, .presenctacion_container h1, .enlace_container h1{
-        font-size: 35px;
-       
+        font-size: 35px;  
+    }
+
+    .detalle_image img{
+        width:100%;
+        border-radius: 30px;
     }
     
 
