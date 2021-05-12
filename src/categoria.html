@@ -129,21 +129,30 @@ PEC1. Desarrollo de una web
                 <div class="card card_categoria">
                     <a href="./detalle.html">
 
-
+                        <!--resolution switching-->
                         <picture>
-                            <img srcset="./images/spam_tacos_160w.png 160w, ./images/spam_tacos_320w.png 320w, ./images/spam_tacos_600w.png 600w "
+                            <img srcset="./images/spam_taco_160w.jpeg 160w, ./images/spam_taco_320w.jpeg 320w, ./images/spam_taco_600w.jpeg 600w "
                                 sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                                src="./images/spam_tacos_600w.png" alt="image of a Spam taco">
+                                src="./images/spam_taco_600w.jpeg" alt="image of a Spam taco">
                         </picture>
                         <h3>Spam<p class="restricted"><sup>&#174;</sup>
                             </p>Tacos</h3>
                     </a>
                 </div>
             </div>
+
             <div class="column column_categoria">
                 <div class="card card_categoria">
                     <a href="./detalle.html">
-                        <img src="./images/spam_burger_large.png" alt="image of a Spam burger">
+
+                        <!--resolution switching-->
+                        <picture>
+                            <img srcset="./images/spam_burger_160w.jpeg 160w, ./images/spam_burger_320w.jpeg 320w, ./images/spam_burger_600w.jpeg 600w "
+                                sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
+                                src="./images/spam_burger_600w.jpeg" alt="image of a Spam burger">
+                        </picture>
+
+
                         <h3>Spam<p class="restricted"><sup>&#174;</sup>
                             </p>Burger</h3>
                     </a>
@@ -152,7 +161,9 @@ PEC1. Desarrollo de una web
             <div class="column column_categoria">
                 <div class="card card_categoria">
                     <a href="./detalle.html">
-                        <img src="./images/spam_melt_large.png" alt="image of a Spam fried rice">
+
+                        <img src="./images/spam_melt_large.jpeg" alt="image of a Spam fried rice">
+
                         <h3>Spam<p class="restricted"><sup>&#174;</sup>
                             </p>Fried Rice</h3>
                     </a>
@@ -164,7 +175,8 @@ PEC1. Desarrollo de una web
                 <div class="card card_categoria_two">
                     <a href="./detalle.html">
 
-                        <img src="./images/spam_pasta_large.png" alt="image of a Spam spaghetti">
+                        <img src="./images/spam_pasta_large.jpeg" alt="image of a Spam spaghetti">
+
                         <h3>Spam<p class="restricted"><sup>&#174;</sup>
                             </p>
                             Pasta</h3>
@@ -175,7 +187,8 @@ PEC1. Desarrollo de una web
                 <div class="card card_categoria_two">
                     <a href="./detalle.html">
 
-                        <img src="./images/spam_rice_large.png" alt="image of a Spam double down sandwhich">
+                        <img src="./images/spam_rice_large.jpeg" alt="image of a Spam double down sandwhich">
+
                         <h3>Spam<p class="restricted"><sup>&#174;</sup>
                             </p>Rice</h3>
                     </a>
@@ -185,7 +198,8 @@ PEC1. Desarrollo de una web
                 <div class="card card_categoria_two">
                     <a href="./detalle.html">
 
-                        <img src="./images/spam_cast_iron_large.png" alt="image of a Spam spash">
+                        <img src="./images/spam_cast_iron_large.jpeg" alt="image of a Spam spash">
+
                         <h3>Spam<p class="restricted"><sup>&#174;</sup>
                             </p>In Cast Iron</h3>
                     </a>
@@ -193,8 +207,15 @@ PEC1. Desarrollo de una web
             </div>
         </div>
 
-
-
+        <div class="categoria_hero_image_container">
+            <!--art direction changes-->
+            <picture>
+                <source media="(max-width: 800px)" srcset="/images/couple_small.jpeg">
+                <source media="(max-width: 1499px)" srcset="/images/couple_medium.jpeg">
+                <source media="(min-width: 1500px)" srcset="/images/couple_large.jpeg">
+                <img src="./images/couple_large.jpeg" alt="happy couple eating">
+            </picture>
+        </div>
     </main>
 
     <footer class="footer">
