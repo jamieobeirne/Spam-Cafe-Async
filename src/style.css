@@ -246,7 +246,6 @@ sup{
     margin: 0 auto;
 }
 
-
 .inner-clip-path h3{
     margin: 0;
 }
@@ -491,6 +490,10 @@ ul.breadcrumb li a {
     border-radius: 30px;
 }
 
+.detail_image_inner:first-of-type{
+    margin-bottom: 65px;
+}
+
 .detalle_content{
     width: 50%;
     color: var(--second_color);
@@ -692,7 +695,6 @@ ul.breadcrumb li a {
 
 @media only screen and (max-width: 901px) {
 
-
     .detalle_image_container{
     flex-direction: column;
     display: flex; /*horizontally and verically center things*/
@@ -708,9 +710,6 @@ ul.breadcrumb li a {
         width: 80%;
         margin-bottom: 40px;
     }
-
-
-
 
 }
 
@@ -783,7 +782,6 @@ ul.breadcrumb li a {
         font-size: 55px;
     }
    
-
 
     .column{
         width: 100%;

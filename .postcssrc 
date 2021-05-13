@@ -1,7 +1,8 @@
 
 
-{ "plugins" : { 
-    "autoprefixer":true
+{ 
+    "plugins": { 
+    "autoprefixer": true
     }
 }
 

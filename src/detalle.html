@@ -81,8 +81,8 @@ PEC1. Desarrollo de una web
         <!--small screen navigation-->
         <div class="hamburger_container">
             <p class="navigation_toggle_title">Menu</p>
-            <a id="toggle" href="#"><svg class="navigation_toggle" xmlns="http://www.w3.org/2000/svg" width="40"
-                    height="95" viewBox="0 0 24 24">
+            <a aria-label="navigation element" id="toggle" href="#"><svg class="navigation_toggle"
+                    xmlns="http://www.w3.org/2000/svg" width="40" height="95" viewBox="0 0 24 24">
                     <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
                 </svg></a>
 
@@ -132,11 +132,24 @@ PEC1. Desarrollo de una web
 
             <div class="detalle_image_container">
                 <div class="detalle_image">
-                    <picture>
-                        <img srcset="./images/spam_taco_160w.jpeg 160w, ./images/spam_taco_320w.jpeg 320w, ./images/spam_taco_600w.jpeg 600w "
-                            sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                            src="./images/spam_taco_600w.jpeg" alt="image of a Spam taco">
-                    </picture>
+
+                    <!--resolution switching-->
+                    <div class="detail_image_inner">
+                        <picture>
+                            <img srcset="./images/spam_taco_160w.jpeg 160w, ./images/spam_taco_320w.jpeg 320w, ./images/spam_taco_600w.jpeg 600w "
+                                sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
+                                src="./images/spam_taco_600w.jpeg" alt="image of a Spam taco">
+                        </picture>
+                    </div>
+
+                    <!--resolution switching-->
+                    <div class="detail_image_inner">
+                        <picture>
+                            <img srcset="./images/spam_taco_two_160w.jpeg 160w, ./images/spam_taco_two_320w.jpeg 320w, ./images/spam_taco_two_600w.jpeg 600w "
+                                sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
+                                src="./images/spam_taco_two_600w.jpeg" alt="second image of a Spam taco">
+                        </picture>
+                    </div>
                 </div>
 
                 <article class="detalle_content">
@@ -215,7 +228,8 @@ PEC1. Desarrollo de una web
                     <h3 class="video_title">How to make SPAM TACOS - Lab of Madness</h3>
                     <div class="video_container">
                         <div class="detalle_video">
-                            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_E_v6SPpt9M"></iframe>
+                            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_E_v6SPpt9M"
+                                title="YouTube food video"></iframe>
                         </div>
                     </div>
                 </div>
