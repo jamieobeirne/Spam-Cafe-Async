@@ -1,13 +1,8 @@
 
 /*James O’Beirne
 M4.257 - Herramientas HTML y CSS aula 1
-PEC1. Desarrollo de una web
-16 de Abril de 2021*/
+PEC3 / 11 de junio de 2021*/
 
-/*https://github.com/fabricjs/fabric.js*/
-
-
-//import { fabric } from "fabric";
 
 const fabric = require("fabric").fabric;
 

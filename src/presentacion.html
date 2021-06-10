@@ -1,14 +1,12 @@
+<!--James O’Beirne
+M4.257 - Herramientas HTML y CSS aula 1
+PEC3 / 11 de junio de 2021-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <!--James O’Beirne
-        M4.257 - Herramientas HTML y CSS aula 1
-        PEC1. Desarrollo de una web
-        16 de Abril de 2021-->
-
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 
+    <script defer src="./index.js"></script>
+    <!--defer script in the head-->
 
 </head>
 
@@ -131,9 +131,9 @@
                 <div class="arrow-inner">
                     <picture>
                         <img class="clip-path-horizontal-arrow" src="./images/clip-path-horizontal.jpg"
-                            alt="clip path an arrow">
+                            alt="clip path an arrow" loading="lazy">
                         <img class="clip-path-vertical-arrow" src="./images/clip-path-vertical.jpeg"
-                            alt="clip path an arrow">
+                            alt="clip path an arrow" loading="lazy">
                     </picture>
                 </div>
                 <div class=" homepage-question">
@@ -228,7 +228,7 @@
                             <picture>
                                 <img srcset="./images/spam_pasta_160w.jpeg 160w, ./images/spam_pasta_320w.jpeg 320w, ./images/spam_pasta_600w.jpeg 600w "
                                     sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                                    src="./images/spam_pasta_600w.jpeg" alt="image of a Spam pasta">
+                                    src="./images/spam_pasta_600w.jpeg" alt="image of a Spam pasta" loading="lazy">
                             </picture>
 
                             <h3>Spam<p class="restricted"><sup>&#174;</sup>
@@ -245,7 +245,7 @@
                             <picture>
                                 <img srcset="./images/spam_rice_160w.jpeg 160w, ./images/spam_rice_320w.jpeg 320w, ./images/spam_rice_600w.jpeg 600w "
                                     sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                                    src="./images/spam_rice_600w.jpeg" alt="image of a Spam rice">
+                                    src="./images/spam_rice_600w.jpeg" alt="image of a Spam rice" loading="lazy">
                             </picture>
 
                             <h3>Spam<p class="restricted"><sup>&#174;</sup>
@@ -261,7 +261,7 @@
                             <picture>
                                 <img srcset="./images/spam_cast_iron_160w.jpeg 160w, ./images/spam_cast_iron_320w.jpeg 320w, ./images/spam_cast_iron_600w.jpeg 600w "
                                     sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                                    src="./images/spam_cast_iron_600w.jpeg" alt="image of a Spam spash">
+                                    src="./images/spam_cast_iron_600w.jpeg" alt="image of a Spam spash" loading="lazy">
                             </picture>
 
                             <h3>Spam<p class="restricted"><sup>&#174;</sup>
@@ -322,14 +322,6 @@
         </div>
     </footer>
 
-
-    <script src="index.js"></script>
 </body>
 
 </html>
-
-
-<!--James O’Beirne
-M4.257 - Herramientas HTML y CSS aula 1
-PEC2
- Mayo 2021-->

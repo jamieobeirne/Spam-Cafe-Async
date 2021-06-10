@@ -1,7 +1,6 @@
 <!--James O’Beirne
 M4.257 - Herramientas HTML y CSS aula 1
-PEC1. Desarrollo de una web
-16 de Abril de 2021-->
+PEC3 / 11 de junio de 2021-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +17,10 @@ PEC1. Desarrollo de una web
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+    <script defer src="./index.js"></script>
+    <!--defer script in the head-->
+
 </head>
 
 <body>
@@ -138,7 +141,7 @@ PEC1. Desarrollo de una web
                         <picture>
                             <img srcset="./images/spam_taco_160w.jpeg 160w, ./images/spam_taco_320w.jpeg 320w, ./images/spam_taco_600w.jpeg 600w "
                                 sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                                src="./images/spam_taco_600w.jpeg" alt="image of a Spam taco">
+                                src="./images/spam_taco_600w.jpeg" alt="image of a Spam taco" loading="lazy">
                         </picture>
                     </div>
 
@@ -147,7 +150,7 @@ PEC1. Desarrollo de una web
                         <picture>
                             <img srcset="./images/spam_taco_two_160w.jpeg 160w, ./images/spam_taco_two_320w.jpeg 320w, ./images/spam_taco_two_600w.jpeg 600w "
                                 sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                                src="./images/spam_taco_two_600w.jpeg" alt="second image of a Spam taco">
+                                src="./images/spam_taco_two_600w.jpeg" alt="second image of a Spam taco" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -216,10 +219,10 @@ PEC1. Desarrollo de una web
             <div class="detail_hero_image_container">
                 <!--art direction changes-->
                 <picture>
-                    <source media="(max-width: 800px)" srcset="/images/couple_small.jpeg">
-                    <source media="(max-width: 1499px)" srcset="/images/couple_medium.jpeg">
-                    <source media="(min-width: 1500px)" srcset="/images/couple_large.jpeg">
-                    <img src="./images/couple_large.jpeg" alt="happy couple eating">
+                    <source media="(max-width: 800px)" srcset="/images/couple_small.jpeg" loading="lazy">
+                    <source media="(max-width: 1499px)" srcset="/images/couple_medium.jpeg" loading="lazy">
+                    <source media="(min-width: 1500px)" srcset="/images/couple_large.jpeg" loading="lazy">
+                    <img src="./images/couple_large.jpeg" alt="happy couple eating" loading="lazy">
                 </picture>
             </div>
 
@@ -284,14 +287,6 @@ PEC1. Desarrollo de una web
         </div>
     </footer>
 
-
-    <script src="index.js"></script>
 </body>
 
 </html>
-
-
-<!--James O’Beirne
-M4.257 - Herramientas HTML y CSS aula 1
-PEC2
- Mayo 2021-->
