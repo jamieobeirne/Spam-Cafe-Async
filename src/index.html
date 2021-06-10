@@ -17,10 +17,11 @@ PEC3 / 11 de junio de 2021-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto&display=swap" rel="stylesheet"> -->
+    <!-- removed following PageSpeed Insight suggestion-->
 
     <script defer src="./index.js"></script>
-    <!--defer script in the head-->
+    <!-- defer script in the head-->
 
 </head>
 
@@ -148,9 +149,14 @@ PEC3 / 11 de junio de 2021-->
             <div class="arrow-container">
                 <div class="arrow-inner">
                     <picture>
-                        <img class="clip-path-horizontal-arrow" src="./images/clip-path-horizontal.jpg"
+                        <!--<img class="clip-path-horizontal-arrow" src="./images/clip-path-horizontal.jpg"
                             alt="clip path an arrow" loading="lazy">
                         <img class="clip-path-vertical-arrow" src="./images/clip-path-vertical.jpeg"
+                            alt="clip path an arrow" loading="lazy"> -->
+
+                        <img class="clip-path-horizontal-arrow" src="./images/clip-path-horizontal.jp2"
+                            alt="clip path an arrow" loading="lazy">
+                        <img class="clip-path-vertical-arrow" src="./images/clip-path-vertical.jpg2"
                             alt="clip path an arrow" loading="lazy">
                     </picture>
                 </div>
@@ -239,6 +245,7 @@ PEC3 / 11 de junio de 2021-->
             <div class="canvas">
                 <!--canvase uses node_modules/fabric libary in javascript-->
                 <img width="0" height="0" src="./images/small_spam.png" id="my-image" />
+                <!--change to JPEG2000-->
                 <!--not lazy-->
                 <canvas height="300" width="295" id="c"></canvas>
             </div>
