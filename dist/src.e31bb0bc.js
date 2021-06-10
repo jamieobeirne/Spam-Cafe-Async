@@ -33665,7 +33665,9 @@ var fabric = require("fabric").fabric;
 
 window.onload = function (event) {
   var canvas = new fabric.Canvas('c');
-  var imgElement = document.getElementById('my-image');
+  var imgElement = document.getElementById('my-image', {
+    passive: true
+  });
   var imgInstance = new fabric.Image(imgElement, {
     left: 60,
     top: 60,
@@ -33673,18 +33675,28 @@ window.onload = function (event) {
   });
   canvas.add(imgInstance);
 };
+/*document.addEventListener('touchstart', onTouchStart, { passive: true });*/
+
 /*hamburger menu toggle on/off*/
 
 
-var hamburger_button = document.getElementById("toggle");
+var hamburger_button = document.getElementById("toggle", {
+  passive: true
+});
 var menu = document.querySelector(".small_sreen_header_navigation");
-var close_hamburger_button = document.getElementById("close_menu");
+var close_hamburger_button = document.getElementById("close_menu", {
+  passive: true
+});
 menu.style.display = "none";
 hamburger_button.addEventListener("click", function display() {
   menu.style.display = "block";
+}, {
+  passive: true
 });
 close_hamburger_button.addEventListener("click", function closeMenu() {
   menu.style.display = "none";
+}, {
+  passive: true
 });
 },{"fabric":"../node_modules/fabric/dist/fabric.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -33714,7 +33726,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55864" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56089" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
