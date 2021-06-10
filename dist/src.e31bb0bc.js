@@ -33683,7 +33683,9 @@ window.onload = function (event) {
 var hamburger_button = document.getElementById("toggle", {
   passive: true
 });
-var menu = document.querySelector(".small_sreen_header_navigation");
+var menu = document.querySelector(".small_sreen_header_navigation", {
+  passive: true
+});
 var close_hamburger_button = document.getElementById("close_menu", {
   passive: true
 });
@@ -33726,7 +33728,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56089" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58193" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
