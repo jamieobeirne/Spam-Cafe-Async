@@ -16,7 +16,7 @@ PEC3 / 11 de junio de 2021-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">-->
 
     <script defer src="./index.js"></script>
     <!--defer script in the head-->
@@ -139,18 +139,18 @@ PEC3 / 11 de junio de 2021-->
                     <!--resolution switching-->
                     <div class="detail_image_inner">
                         <picture>
-                            <img srcset="./images/spam_taco_160w.jpeg 160w, ./images/spam_taco_320w.jpeg 320w, ./images/spam_taco_600w.jpeg 600w "
+                            <img srcset="./images/spam_taco_160w.webp 160w, ./images/spam_taco_320w.webp 320w, ./images/spam_taco_600w.webp 600w "
                                 sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                                src="./images/spam_taco_600w.jpeg" alt="image of a Spam taco" loading="lazy">
+                                src="./images/spam_taco_600w.webp" alt="image of a Spam taco" loading="lazy">
                         </picture>
                     </div>
 
                     <!--resolution switching-->
                     <div class="detail_image_inner">
                         <picture>
-                            <img srcset="./images/spam_taco_two_160w.jpeg 160w, ./images/spam_taco_two_320w.jpeg 320w, ./images/spam_taco_two_600w.jpeg 600w "
+                            <img srcset="./images/spam_taco_two_160w.webp 160w, ./images/spam_taco_two_320w.webp 320w, ./images/spam_taco_two_600w.webp 600w "
                                 sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
-                                src="./images/spam_taco_two_600w.jpeg" alt="second image of a Spam taco" loading="lazy">
+                                src="./images/spam_taco_two_600w.webp" alt="second image of a Spam taco" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -216,27 +216,38 @@ PEC3 / 11 de junio de 2021-->
                 </article>
             </div>
 
-            <div class="detail_hero_image_container">
-                <!--art direction changes-->
-                <picture>
-                    <source media="(max-width: 800px)" srcset="/images/couple_small.jpeg" loading="lazy">
-                    <source media="(max-width: 1499px)" srcset="/images/couple_medium.jpeg" loading="lazy">
-                    <source media="(min-width: 1500px)" srcset="/images/couple_large.jpeg" loading="lazy">
-                    <img src="./images/couple_large.jpeg" alt="happy couple eating" loading="lazy">
-                </picture>
-            </div>
 
-            <div class="detalle_media_center">
-                <div class="media_container">
-                    <h3 class="video_title">How to make SPAM TACOS - Lab of Madness</h3>
-                    <div class="video_container">
-                        <div class="detalle_video">
-                            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_E_v6SPpt9M"
-                                title="YouTube food video"></iframe>
-                        </div>
+            <!--art direction changes-->
+            <picture>
+                <source media="(max-width: 800px)" srcset="/images/couple_small.webp" loading="lazy" width="100%"
+                    height="auto">
+                <source media="(max-width: 1499px)" srcset="/images/couple_medium.webp" loading="lazy" width="100%"
+                    height="auto">
+                <source media="(min-width: 1500px)" srcset="/images/couple_large.webp" loading="lazy" width="100%"
+                    height="auto">
+                <img src="./images/couple_large.webp" alt="happy couple eating" loading="lazy" width="100%"
+                    height="auto">
+            </picture>
+        </div>
+
+        <div class="detalle_media_center">
+            <div class="media_container">
+                <h3 class="video_title">How to make SPAM TACOS - Lab of Madness</h3>
+                <div class="video_container">
+                    <div class="detalle_video">
+                        <!--<iframe class="responsive-iframe" src="https://www.youtube.com/embed/_E_v6SPpt9M"
+                            title="YouTube food video"></iframe>-->
+
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Gxtsa-OvQLA"
+                            srcdoc="<style>*
+                                    {padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style> <a href=https://www.youtube.com/embed/Gxtsa-OvQLA?autoplay=1> <img src=https://mediad.publicbroadcasting.net/p/shared/npr/styles/placed_wide/nprshared/202106/798502953.jpg alt='Monty Python Live'><span>▶</span></a>"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen title="Monty Python Live" class="responsive-iframe"></iframe>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 

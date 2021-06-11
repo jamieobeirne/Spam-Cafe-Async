@@ -17,7 +17,8 @@ PEC3 / 11 de junio de 2021*/
 }
 
 h1,h2,h3,h6{
-    font-family: 'Dela Gothic One', cursive;
+    /*font-family: 'Dela Gothic One', cursive;*/
+    font-family: 'Times New Roman', serif;    
 }
 
 h4, h5,p{
@@ -124,10 +125,13 @@ body{
     width:100%;
     height: 520px;
 
-    /*backup for browsers that don't support image-set*/
-    background-image: url("/spam_breakfast.150e4540.jpeg");
+    /*background-image: url("./images/spam_breakfast.jpeg"); original*/
+    /*background-image: url("./images/spam_breakfast.jp2"); Jpeg200*/
+    background-image: url("/spam_breakfast.f4fe218b.webp"); /* webP! */ 
+    
     /*image-set*/
-    background-image: -webkit-image-set( url("/spam_breakfast_reduced.ef58d613.jpeg") 1x, url("/spam_breakfast.150e4540.jpeg") 2x );
+    /*not needed due to Parcel*/ 
+    /*background-image: -webkit-image-set( url("./images/spam_breakfast_reduced.jpeg") 1x, url("./images/spam_breakfast.webp") 2x );*/
 
     background-size: 1500px;
     background-attachment: fixed;
@@ -540,15 +544,17 @@ ul.breadcrumb li a {
         position: relative;
         overflow: hidden;
         width: 100%;
-        padding-top: 56.25%;
+        /*padding-top: 56.25%;*/
 }
 
 .responsive-iframe{
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%;*/
+    min-width: 600px;
+    min-height: 400px;
 }
 
 
@@ -929,6 +935,11 @@ ul.breadcrumb li a {
         font-size: 14px;
     }
 
+    .responsive-iframe{
+        min-width: 400px;
+        min-height: 200px;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -959,6 +970,10 @@ ul.breadcrumb li a {
     .inner-clip-path{
     clip-path: circle(10% at 50% 13%);
     }
+    .responsive-iframe{
+        min-width: 350px;
+        min-height: 200px;
+    }
     
 
 }
@@ -974,6 +989,11 @@ ul.breadcrumb li a {
         font-size: 12px;
         padding-left: 27px;
         padding-right: 15px;
+    }
+
+    .responsive-iframe{
+        min-width: 250px;
+        min-height: 100px;
     }
 } 
 
